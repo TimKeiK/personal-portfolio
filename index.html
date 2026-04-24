@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timothy Kamami | Software Engineer & Cybersecurity Expert</title>
+    <meta name="description"
+        content="Timothy Kaguamba Kamami - Results-driven Software Engineer and Cybersecurity Expert with expertise in full-stack development, penetration testing, and systems administration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <span class="loader-text">TK</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Particles Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>TK<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate="fade-down">
+                <i class="fas fa-shield-halved"></i>
+                <span>Available for Opportunities</span>
+            </div>
+            <h1 class="hero-title" data-animate="fade-up">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">
+                    <span class="letter-animate">T</span><span class="letter-animate">i</span><span
+                        class="letter-animate">m</span><span class="letter-animate">o</span><span
+                        class="letter-animate">t</span><span class="letter-animate">h</span><span
+                        class="letter-animate">y</span>
+                    <span class="letter-animate"> </span>
+                    <span class="letter-animate gold">K</span><span class="letter-animate gold">a</span><span
+                        class="letter-animate gold">m</span><span class="letter-animate gold">a</span><span
+                        class="letter-animate gold">m</span><span class="letter-animate gold">i</span>
+                </span>
+                <span class="hero-roles">
+                    <span class="role-text" id="typedText"></span>
+                    <span class="cursor-blink">|</span>
+                </span>
+            </h1>
+            <p class="hero-description" data-animate="fade-up" data-delay="200">
+                Results-driven Software Engineer & Cybersecurity Expert crafting secure,
+                scalable digital solutions. Passionate about building innovative software
+                and fortifying systems against emerging threats.
+            </p>
+            <div class="hero-cta" data-animate="fade-up" data-delay="400">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hero-stats" data-animate="fade-up" data-delay="600">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="11">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Key Competencies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Months at Secunets</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="fas fa-user"></i> Get To Know Me</span>
+                <h2 class="section-title">About <span class="gold">Me</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper" data-animate="fade-right">
+                    <div class="about-image-container">
+                        <div class="about-image-border"></div>
+                        <div class="about-image-glow"></div>
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-code"></i>
+                            <span>TK</span>
+                        </div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="badge-number">BSc.</span>
+                        <span class="badge-text">Computer Science</span>
+                    </div>
+                </div>
+                <div class="about-content" data-animate="fade-left">
+                    <h3 class="about-subtitle">Software Engineer & <span class="gold">Cybersecurity Expert</span></h3>
+                    <p class="about-text">
+                        I am a results-driven Software Engineer currently pursuing my Bachelor of Science in
+                        Computer Science at the University of Embu, Kenya. With hands-on experience in full-stack
+                        web development and systems administration, I bring a unique blend of development expertise
+                        and security awareness to every project.
+                    </p>
+                    <p class="about-text">
+                        During my industrial attachment at <strong>Secunets Technologies Ltd</strong>, I gained
+                        intensive practical exposure to cybersecurity, cloud infrastructure, and enterprise IT systems.
+                        I was recognized by CEO Fredrick Wahome as a <em>"diligent, innovative, and valuable
+                            member"</em>
+                        who demonstrated exceptional skills across various projects.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kikuyu, Kenya</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>University of Embu</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tkkamami@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+254 113 858 939</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="fas fa-laptop-code"></i> What I Do</span>
+                <h2 class="section-title">Skills & <span class="gold">Expertise</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="services-grid" data-animate="fade-up">
+                <div class="service-card" data-tilt>
+                    <div class="service-icon-wrap">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Building scalable web applications with Python, JavaScript, React, FastAPI, Flask, and modern
+                        frameworks.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon-wrap">
+                        <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Penetration testing, vulnerability assessments, VAPT reporting, and ethical hacking using
+                        industry-standard tools.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon-wrap">
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Systems Administration</h3>
+                    <p>Linux/Windows server management, cloud infrastructure, RBAC, and enterprise email system
+                        configuration.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon-wrap">
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Database Management</h3>
+                    <p>Designing and managing MySQL, PostgreSQL, SQL Server, and Oracle databases with optimized
+                        queries.</p>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="skills-categories" data-animate="fade-up">
+                <div class="skill-category">
+                    <h4><i class="fas fa-terminal"></i> Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-globe"></i> Web Technologies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-bug"></i> Cybersecurity Tools</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Nessus</span>
+                        <span class="skill-tag">Zenmap</span>
+                        <span class="skill-tag">Burp Suite</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-network-wired"></i> Systems & Networking</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">Apache</span>
+                        <span class="skill-tag">IIS</span>
+                        <span class="skill-tag">OPNsense</span>
+                        <span class="skill-tag">PFsense</span>
+                        <span class="skill-tag">Zimbra</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-database"></i> Databases</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Oracle</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-brain"></i> Soft Skills</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Attention to Detail</span>
+                        <span class="skill-tag">Continuous Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> My Journey</span>
+                <h2 class="section-title">Experience & <span class="gold">Education</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-animate="fade-right">
+                    <div class="timeline-dot"><i class="fas fa-shield-halved"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> April 2025 - August 2025</span>
+                            <span class="timeline-badge">Industrial Attachment</span>
+                        </div>
+                        <h3>Cybersecurity & Systems Admin Trainee</h3>
+                        <h4 class="gold">Secunets Technologies Ltd — Nairobi</h4>
+                        <ul class="timeline-list">
+                            <li>Managed Linux/Windows servers and set up cloud environments with RBAC and encryption
+                            </li>
+                            <li>Performed vulnerability assessments and penetration testing using Nmap, Wireshark,
+                                Metasploit, Nessus</li>
+                            <li>Designed virtual network labs with OPNSense firewalls for network segmentation</li>
+                            <li>Deployed and managed MySQL, PostgreSQL, SQL Server, and Oracle databases</li>
+                            <li>Configured Zimbra Collaboration Suite for enterprise email handling</li>
+                            <li>Co-authored VAPT reports and participated in client-facing security audits</li>
+                        </ul>
+                        <div class="timeline-quote">
+                            <blockquote>
+                                "Timothy has proven to be a diligent, innovative, and valuable member of our team.
+                                His contributions have been significant and noteworthy."
+                                <cite>— Fredrick Wahome, CEO, Secunets Technologies Ltd</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-left">
+                    <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> 2022 - Present</span>
+                            <span class="timeline-badge education">University</span>
+                        </div>
+                        <h3>Bachelor of Science — Computer Science</h3>
+                        <h4 class="gold">University of Embu — Embu, Kenya</h4>
+                        <ul class="timeline-list">
+                            <li>Object Oriented Programming (C++), Data Structures & Algorithms</li>
+                            <li>Software Engineering, Web Application Development</li>
+                            <li>Database Management Systems, System Analysis & Design</li>
+                            <li>Artificial Intelligence, Machine Learning</li>
+                            <li>Network and Distributed Programming</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-right">
+                    <div class="timeline-dot"><i class="fas fa-school"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> 2017 - 2021</span>
+                            <span class="timeline-badge education">High School</span>
+                        </div>
+                        <h3>High School Diploma</h3>
+                        <h4 class="gold">Njumbi High School — Murang'a, Kenya</h4>
+                        <p>Graduated with a B- (Minus) grade, building a strong academic foundation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="fas fa-rocket"></i> My Work</span>
+                <h2 class="section-title">Featured <span class="gold">Projects</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-animate="fade-up" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-expand"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-bus-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Full-Stack Application</div>
+                        <h3>School Transport Management System</h3>
+                        <p>A scalable full-stack system streamlining transportation logistics, student tracking, and
+                            route management with role-based access control.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animate="fade-up" data-delay="200" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-expand"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Web Application</div>
+                        <h3>Multi-User Blogging Platform</h3>
+                        <p>A dynamic blogging application with seamless content creation, user authentication, and
+                            interactive features with secure data handling.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animate="fade-up" data-delay="400" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn"><i class="fas fa-expand"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Dashboard</div>
+                        <h3>Real-Time Weather Dashboard</h3>
+                        <p>A responsive real-time weather dashboard integrating REST APIs to fetch and render live
+                            meteorological data across global cities.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span><span>Node.js</span><span>REST APIs</span><span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Reach Out</span>
+                <h2 class="section-title">Get In <span class="gold">Touch</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <h3>Let's work <span class="gold">together</span></h3>
+                    <p>I'm currently open to new opportunities and collaborations. Whether you have a project in mind or
+                        just want to say hello, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:tkkamami@gmail.com">tkkamami@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+254113858939">+254 113 858 939</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Kikuyu, Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:tkkamami@gmail.com" class="social-link" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" data-animate="fade-left">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="subject" name="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>TK<span class="logo-bracket">/&gt;</span>
+            </div>
+            <p>Designed & Built by Timothy Kamami</p>
+            <p class="footer-copy">&copy; 2026 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

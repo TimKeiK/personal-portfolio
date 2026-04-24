@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Track only these files
+!index.html
+!styles.css
+!script.js
+!.gitignore
