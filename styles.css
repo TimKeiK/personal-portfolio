@@ -107,9 +107,7 @@ body { font-family:var(--font-body); background:var(--black); color:var(--white)
 .about-image-border { position:absolute; inset:-8px; border:2px solid var(--gold); border-radius:20px; transform:rotate(3deg); transition:transform .4s; }
 .about-image-container:hover .about-image-border { transform:rotate(0deg); }
 .about-image-glow { position:absolute; inset:0; background:radial-gradient(circle at center,var(--gold-glow),transparent 70%); filter:blur(30px); opacity:.4; }
-.about-image-placeholder { width:100%; height:100%; background:linear-gradient(135deg,var(--black-card),var(--black-light)); border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; border:1px solid var(--border); }
-.about-image-placeholder i { font-size:4rem; color:var(--gold); }
-.about-image-placeholder span { font-family:var(--font-main); font-size:2rem; font-weight:800; color:var(--gold); }
+.about-image { width:100%; height:100%; object-fit:cover; border-radius:16px; border:1px solid var(--border); display:block; background:linear-gradient(135deg,var(--black-card),var(--black-light)); }
 .about-experience-badge { position:absolute; bottom:-20px; right:0; background:linear-gradient(135deg,var(--gold),var(--gold-dark)); color:var(--black); padding:.8rem 1.2rem; border-radius:12px; text-align:center; box-shadow:0 8px 30px var(--gold-glow); }
 .badge-number { display:block; font-family:var(--font-main); font-size:1.2rem; font-weight:800; }
 .badge-text { font-size:.7rem; font-weight:600; }
