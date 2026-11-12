@@ -6,3 +6,7 @@
 !styles.css
 !script.js
 !.gitignore
+!README.md
+!LICENSE
+!assets/
+!assets/**
